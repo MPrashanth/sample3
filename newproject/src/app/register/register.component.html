@@ -1,0 +1,57 @@
+<div class="container">
+  <div class="registrationForm">
+    <h2> Register Form </h2>
+    <form action="">
+                              <!-- Firstname -->
+      <div>
+      <div class="col-md-3"> <label> Firstname </label></div>
+      <div class="col-md-9">
+        <input type="text" class="form-control" name="firstname" placeholder="Enter your Firstname" [(ngModel)]= "userregistration.firstname">
+      </div>
+      </div>
+                               <!-- Lastname -->
+      <div>
+      <div class="col-md-3"><label> Lastname </label></div>
+      <div class="col-md-9">
+        <input type="text" class="form-control" name="lastname" placeholder="Enter your Lastname" [(ngModel)]= "userregistration.lastname">
+      </div>
+      </div>
+                                <!-- Email -->
+      <div>
+      <div class="col-md-3"><label> Email </label></div>
+      <div class="col-md-9">
+        <input type="email" class="form-control" name="email" placeholder="Enter your Email Id" [(ngModel)]= "userregistration.email">
+      </div>
+      </div>
+                                <!-- Phone -->
+      <div>
+      <div class="col-md-3"><label> Phone </label></div>
+      <div class="col-md-9">
+        <input type="number" class="form-control" name="phone" placeholder="Enter your phone number" [(ngModel)]= "userregistration.phone">
+
+      </div>
+      </div>
+                                <!-- Username -->
+      <div>
+      <div class="col-md-3"><label> Username </label></div>
+      <div class="col-md-9">
+        <input type="text" class="form-control" name="username" placeholder="Enter your Username" [(ngModel)]= "userregistration.username">
+      </div>
+      </div>
+                                <!-- Password -->
+      <div>
+      <div class="col-md-3"><label> Password </label></div>
+      <div class="col-md-9">
+        <input type="password" class="form-control" name="password" placeholder="Enter your Password" [(ngModel)]= "userregistration.password">
+      </div>
+      </div>
+      <div>
+        <div class="col-md-3"><label> </label></div>
+        <div class="col-md-9">
+         
+          <input type="button" class="btn btn-success" value="Submit Registration" (click) = "submitregister();">
+        </div>
+        </div>  
+    </form>
+  </div>
+</div>

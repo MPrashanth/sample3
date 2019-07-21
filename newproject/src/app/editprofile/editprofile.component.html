@@ -1,0 +1,63 @@
+<div class="container">
+    {{userdata | json}}
+  <div class="editprofile"><h2>Edit Profile</h2>
+
+    
+
+    <form action="">
+                              
+                                <!-- Username -->    
+        <div>
+            <div class="col-md-3"> <label> username </label></div>
+            <div class="col-md-9">
+              <input type="text" class="form-control" name="usernamename" placeholder="Enter your Username" 
+              [(ngModel)]="userdata.username">
+            </div>
+          </div>
+
+                                  <!-- Firstname -->
+        <div>
+          <div class="col-md-3"> <label> Firstname </label></div>
+          <div class="col-md-9">
+            <input type="text" class="form-control" name="firstname" placeholder="Enter your Firstname" 
+            [(ngModel)]="userdata.firstname">
+          </div>
+        </div>
+                                  <!-- Lastname -->
+        <div>
+          <div class="col-md-3"><label> Lastname </label></div>
+          <div class="col-md-9">
+            <input type="text" class="form-control" name="lastname"  placeholder="Enter your Lastname"
+            [(ngModel)]="userdata.lastname">
+          </div>
+        </div>
+                                  <!-- Email -->
+        <div>
+          <div class="col-md-3"><label> Email </label></div>
+          <div class="col-md-9">
+            <input type="email" class="form-control" name="email" placeholder="Enter your Email Id" 
+            [(ngModel)]="userdata.email" >
+          </div>
+        </div>
+                                    <!-- Phone -->
+        <div>
+          <div class="col-md-3"><label> Phone </label></div>
+          <div class="col-md-9">
+            <input type="number" class="form-control" name="phone"  placeholder="Enter your phone number" 
+            [(ngModel)]="userdata.phone" >
+
+          </div>
+        </div>
+                                  <!-- Edit Profile -->
+        <div>
+            <div class="col-md-3"><label>  </label></div>
+            <div class="col-md-9">
+                <!-- <a routerLink="/editmyprofile" class="btn btn-success"  > Edit my Profile  </a> -->
+                <a (click)="editmyprofile()" class="btn btn-success" >Edit my Profile</a>
+  
+            </div>
+          </div>
+
+    </form>
+  </div>
+</div>

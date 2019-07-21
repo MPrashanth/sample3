@@ -1,0 +1,46 @@
+<div class="container">
+  <div class="mydashboard">
+    {{userdata | json}}
+    
+    <h2> {{username}} Dashboard </h2>
+    <table class="table table-bordered">
+      <tr>
+        <th>s no</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>phone</th>
+        <th>Username</th>
+        <th> Edit </th>
+        <th> Change PAssword </th>
+        <th> Logout </th>
+
+      </tr>
+      <tr>
+        <!-- <td> {{ userdata._id }}</td> -->
+        <td> {{ userdata.firstname }} {{ userdata.lastname }} </td>
+        <td> {{ userdata.email }}  </td>
+        <td> {{ userdata.phone }}  </td>
+        <td> {{ userdata.username }}  </td>
+        <td> <a routerLink="/editprofile" class="btn btn-success"> Edit Profile </a></td>
+        <td> <a routerLink="/changepassword" class="btn btn-success"> Change Password </a></td>
+        <td> <a (click)="logout();" class="btn btn-success" > Logout </a> </td>
+         
+          
+      </tr>
+
+ </table>
+    
+  </div>
+  <div class="row">
+      <div>
+          <a routerLink="/editprofile" class="btn btn-success"> Edit Profile </a>
+          <a routerLink="/changepassword" class="btn btn-success"> Change Password </a>
+          <a (click)="logout();" class="btn btn-success" > Logout </a>
+          <!-- <a routerLink="/logout" class="btn btn-success">  Logout </a> -->
+          
+          <!-- <a (click)="editprofile();" class="btn btn-success" > Edit Profile </a> 
+          <a (click)="changepassword();" class="btn btn-success" > Change Password</a> 
+          <a (click)="logout();" class="btn btn-success" > Logout </a> -->
+      </div>
+    </div>
+</div> 
